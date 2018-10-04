@@ -11,9 +11,14 @@
 
 **获取参数**
 首先需要在本地电脑也下载rclone用于获取 OneDrive  登录 TOKEN ， 因为过程当中会打开网页，登录 OneDrive 由于 SSH 配置是无法看到网页的
+
 下载rclone的Windows客户端
 [x64](https://downloads.rclone.org/v1.43.1/rclone-v1.43.1-windows-amd64.zip) [x32](https://downloads.rclone.org/v1.43.1/rclone-v1.43.1-windows-386.zip)
+
 解压到能找到的目录，cmd定位到解压后的文件夹
+
 输入命令
+
 `rclone authorize "onedrive"`
+
 ![1](https://github.com/chain01/Cloud-hard-disk/blob/master/image/1.png)
