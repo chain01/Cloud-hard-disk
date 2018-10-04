@@ -16,3 +16,4 @@
 解压到能找到的目录，cmd定位到解压后的文件夹
 输入命令
 `rclone authorize "onedrive"`
+![1](https://github.com/chain01/Cloud-hard-disk/blob/master/image/1.png)
