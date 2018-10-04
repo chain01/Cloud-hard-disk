@@ -38,8 +38,11 @@
 因为我们是从Console控制台中复制出来的文本，所以里面会有换行符。等下是无法直接在 SSH 粘贴使用的，所以这里用到了 Notepad++ 来转换一下 
 
 1、粘贴文本到新建的记事本
+
 2、用 Notepad++ 打开 菜单中选择 搜索 -  替换
+
 3、设置 查找目标为 （\r\n） 勾选下面的 （扩展（\n,\r,\t...）选项）后 全部替换
+
 
 **安装rclone**
 
@@ -48,9 +51,12 @@ ssh连接vps
 `curl https://rclone.org/install.sh | sudo bash`
 
 成功会显示
+
 rclone v1.43.1 has successfully installed.
 Now run "rclone config" for setup. Check https://rclone.org/docs/ for more details
+
 ![5](https://github.com/chain01/Cloud-hard-disk/blob/master/image/5.png)
+
 **初始化配置**
 
 `rclone config`
