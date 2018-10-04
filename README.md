@@ -61,7 +61,7 @@ Now run "rclone config" for setup. Check https://rclone.org/docs/ for more detai
 
 `rclone config`
 
-输入n新建，输入名称（这个名称是可以随便起的，我是为了方便识别写了OneDrive）选择要挂载的云盘这里我是OneDrive所以选了17，别的云盘也可以过程自行谷歌
+输入n新建，输入名称（这个名称是可以随便起的，我是为了方便识别写了OneDrive）
 
 ![6](https://github.com/chain01/Cloud-hard-disk/blob/master/image/6.png)
 
@@ -88,13 +88,13 @@ Now run "rclone config" for setup. Check https://rclone.org/docs/ for more detai
 
 wget https://www.moerats.com/usr/shell/rcloned && vi rcloned
 
-修改一下内容：
+修改以下内容：
 
-`NAME=""  #rclone name名，及配置时输入的Name
+` NAME=""  #rclone name名，及配置时输入的Name
 
 REMOTE=''  #远程文件夹，Google Drive网盘里的挂载的一个文件夹
 
-LOCAL=''  #挂载地址，VPS本地挂载目录`
+LOCAL=''  #挂载地址，VPS本地挂载目录 `
 
 ![11](https://github.com/chain01/Cloud-hard-disk/blob/master/image/11.png)
 
@@ -102,13 +102,18 @@ LOCAL=''  #挂载地址，VPS本地挂载目录`
 
 `
 apt-get install sudo -y
+
 #设置自启
+
 mv rcloned /etc/init.d/rcloned
+
 chmod +x /etc/init.d/rcloned
 update-rc.d -f rcloned defaults
+
 bash /etc/init.d/rcloned start`
 
 成功后执行 df -h 查看是否挂载成功
+
 ![12](https://github.com/chain01/Cloud-hard-disk/blob/master/image/12.png)
 
 
